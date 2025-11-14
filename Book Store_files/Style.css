@@ -1,0 +1,843 @@
+@import url('https://fonts.googleapis.com/css2?family=Genos:wght@100&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cinzel&family=IBM+Plex+Mono:wght@100&display=swap');
+
+* {
+    margin: 0%;
+    padding: 0%;
+}
+
+body {
+    background-color: rgb(237, 237, 237);
+    color: black;
+    font-family: Arial;   
+}
+
+.mobnav {
+    background-color: #333;
+    margin-bottom: 2vw;
+    display: none;
+}
+  
+.mobnav #myLinks {
+    display: none;
+}
+  
+.mobnav a {
+    color: white;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+    display: block;
+}
+  
+.mobnav a.icon {
+    background: black;
+    display: block;
+    position: absolute;
+    left: 0;
+    top: 2vw;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 2vw;
+    margin-left: 4vw;
+    margin-right: 4vw;
+    font-family: Arial;
+    margin-bottom: 2vw;
+}
+
+nav .Cname img {
+    width: 15vw;
+}
+
+nav .Cname .Title2 {
+    color: gray;
+    font-style: italic;
+}
+
+nav a {
+    text-decoration: none;
+    color: black;
+}
+
+nav .Links a {
+    margin-left: 4vw;
+}
+
+nav .Links a:hover {
+    padding-bottom: 0.7vw;
+    border-bottom: orange 2px solid;
+    color: gray;
+}
+
+nav .Links a:active {
+    padding-bottom: 0.7vw;
+    border-bottom: green 2px solid;
+}
+
+nav .this {
+    padding-bottom: 0.7vw;
+    border-bottom: red 2px solid;
+}
+
+nav .BookCategory {
+    margin-left: 4vw;
+}
+
+nav .BookCategory a:hover {
+    padding-bottom: 0.7vw;
+    border-bottom: orange 2px solid;
+    color: gray;
+}
+
+nav .Shop a {
+    margin-left: 4vw;
+}
+
+nav .Shop img {
+    width: 1.5vw;
+}
+
+.cart {
+    padding: 15px 26px;
+    position: relative;
+    display: inline-block;
+    border-radius: 2px;
+}
+  
+.cart:hover {
+    background: orange;
+    border-radius: 5vw;
+}
+  
+.cart #clicks {
+    position: absolute;
+    top: -10px;
+    right: -10px;
+    padding: 5px 10px;
+    border-radius: 50%;
+    background: gray;
+    color: white;
+}
+
+
+
+
+/************ Footer ****************/
+
+footer {
+    background-color: gray;
+    color: black;
+    padding-top: 4vw;
+    padding-bottom: 3vw;
+    display: flex;
+    justify-content: space-between;
+    padding-left: 14vw;
+    padding-right: 14vw;
+}
+
+footer .logo h2 {
+    margin-bottom: 2vw;
+}
+
+footer h3 {
+    margin-bottom: 2vw;
+}
+
+footer .contact p {
+    line-height: 2.5vw;
+}
+
+footer .contact {
+    margin-right: 3vw;
+}
+
+footer .letter {
+    margin-right: 1vw;
+}
+
+footer .letter .news {
+    background-color: white;
+    color: white;
+    padding-left: 9vw;
+    padding-right: 1vw;
+    padding-top: 0.5vw;
+    padding-bottom: 0.5vw;
+}
+
+footer .letter .news img {
+    width: 2vw;
+}
+
+
+
+
+/************ Home Page ****************/
+
+.intro_books {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 4vw;
+}
+
+.intro_books .left {
+    text-align: center;
+    margin-left: 8vw;
+    margin-top: 5vw;
+}
+
+.intro_books .left .one {
+    font-family: 'Cinzel', serif;
+    font-size: 5.5vw;
+}
+
+.intro_books .left .two {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 5vw;
+    font-weight: bolder;
+}
+
+.intro_books .left .three {
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: 5vw;
+    font-weight: 100;
+}
+
+.intro_books .left .tag {
+    color: gray;
+}
+
+.intro_books .left a {
+    text-decoration: none;
+}
+
+.intro_books .left a:hover .button {
+    border: yellowgreen 5px solid;
+}
+
+.intro_books .left .button {
+    color: white;
+    background-color: black;
+    border: black 5px solid;
+    font-size: 2vw;
+    margin-top: 2vw;
+    margin-left: 5vw;
+    margin-right: 5vw;
+    padding: 1vw;
+}
+
+.intro_books .right {
+    display: flex;
+    margin-top: 4vw;
+    align-items: baseline;
+}
+
+.intro_books .right img:hover {
+    opacity: 50%;
+}
+
+.intro_books .right .one{
+    width: 20vw;
+    height: 28vw;
+    box-shadow: 20px 20px 20px -12px black;
+}
+
+.intro_books .right .two{
+    width: 24vw;
+    height: 34vw;
+    margin-left: 4vw;
+    margin-right: 10vw;
+    box-shadow: 20px 20px 30px -8px black;
+}
+
+.intro {
+    background-color: black;
+    border-radius: 2vw;
+    color: white;
+    margin-top: 15vw;
+    margin-right: 10vw;
+    margin-left: 10vw;
+    padding-right: 8vw;
+    padding-left: 8vw;
+    padding-bottom: 4vw;
+    padding-top: 4vw;
+    box-shadow: 20px 20px 30px -15px black;
+}
+
+.intro h1 {
+    text-align: center;
+    margin-bottom: 4vw;
+    font-size: 3vw;
+}
+
+.intro p {
+    font-size: 1.3vw;
+    line-height: 2.5vw;
+}
+
+.intro2 {
+    background-color: white;
+    border-radius: 2vw;
+    color: black;
+    margin-top: 5vw;
+    margin-right: 10vw;
+    margin-left: 10vw;
+    margin-bottom: 5vw;
+    padding-top: 3vw;
+    padding-bottom: 3vw;
+    box-shadow: 0px 0px 30px 0px black;
+}
+
+.intro2 .top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;   
+    padding-top: 4vw;
+}
+
+.intro2 .bottom {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 4vw;
+    padding-bottom: 4vw;
+}
+
+.intro2 .left {
+    margin-left: 12vw;
+}
+
+.intro2 .right {
+    margin-right: 12vw;
+}
+
+.intro2 .head {
+    font-size: 3vw;
+    padding-bottom: 1vw;
+}
+
+.intro2 .body {
+    font-size: 1.2vw;
+    padding-bottom: 4vw;
+    line-height: 2vw;
+}
+
+
+
+
+/************ Popular Picks Page ****************/
+
+.pname {
+    padding-top: 2vw;
+    padding-bottom: 2vw;
+    margin-bottom: 5vw;
+    margin-left: 20vw;
+    margin-right: 20vw;
+    text-align: center;
+    font-weight: bolder;
+    color: white;
+    font-size: 5vw;
+    background-image: url(../Media/bg4.jpeg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 0px -200px;
+    background-attachment: scroll;
+}
+
+.books {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 5vw;
+}
+
+.books .info {
+    padding-right: 10vw;
+}
+
+.books .Title {
+    font-family: 'Cinzel', serif;
+    font-weight: bolder;
+    font-style: italic;
+    font-size: 2.5vw;
+    margin-bottom: 1vw;
+}
+
+.books .Author {
+    font-family: 'IBM Plex Mono', monospace;
+    font-weight: 600;
+    margin-bottom: 1vw;
+}
+
+.books .Summary {
+    line-height: 1.8vw;
+}
+
+.books .info .buy {
+    margin-top: 4vw;
+}
+
+.books .info .buy p {
+    margin-bottom: 4vw;
+    font-style: italic;
+}
+
+.books .info .buy p span {
+    font-weight: bold;
+}
+
+button {
+    border: black 4px solid;
+    background-color: rgb(237, 237, 237);
+    padding: 1vw 10vw;
+    font-weight: 400;
+    font-size: 1vw;
+    text-align: center;
+    cursor: pointer;
+}
+
+button:hover {
+    border: yellowgreen 4px solid;
+    box-shadow: 0px 0px 20px 1px black;
+}
+
+.books .bookimg img {
+    width: 20vw;
+    height: 30vw;
+    box-shadow: 0px 0px 40px 1px black;
+}
+
+.line {
+    margin-bottom: 5vw;
+    margin-left: 18vw;
+    margin-right: 18vw;
+    border: teal 2px solid;
+    background-color: teal;
+}
+
+
+
+
+/************ Books Page ****************/
+
+.bname {
+    padding-top: 2vw;
+    padding-bottom: 2vw;
+    margin-bottom: 2vw;
+    margin-left: 3vw;
+    margin-right: 3vw;
+    text-align: center;
+    font-weight: bolder;
+    color: white;
+    font-size: 5vw;
+    background-image: url(../Media/bg.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+.bookr1 {
+    display: flex;
+    justify-content: space-between;
+    margin-left: 3vw;
+    margin-right: 3vw;
+    margin-bottom: 5vw;
+    
+}
+
+.b1 {
+    background-color: white;
+    border: white 1vw solid;
+    text-align: center;
+    box-shadow: 0px 0px 40px -20px black;
+    align-items: center;
+}
+
+.bookr1 .b1 img {
+    width: 20vw;
+    height: 30vw;
+    box-shadow: 0px 0px 40px -20px black;
+
+}
+
+.bookr1 .b1 h2 {
+    margin-top: 1vw;
+    font-weight: 400;
+}
+
+.bookr1 .b1 h4 {
+    margin-top: 1vw;
+    color: gray;
+    font-style: italic;
+    font-weight: 100;
+}
+
+.bookr1 .b1 h3 {
+    margin-top: 1vw;
+    margin-bottom: 1vw;
+}
+
+.b1 button {
+    border: black 4px solid;
+    background-color: black;
+    color: white;
+    padding: 1vw 4vw;
+    font-weight: 400;
+    font-size: 1vw;
+    text-align: center;
+    cursor: pointer;
+}
+
+.b1 button:hover {
+    border: yellowgreen 4px solid;
+    box-shadow: 0px 0px 20px -1px gray;
+}
+
+
+
+
+/************ Author Page ****************/
+
+.aname {
+    padding-top: 2vw;
+    padding-bottom: 2vw;
+    margin-bottom: 5vw;
+    margin-left: 20vw;
+    margin-right: 20vw;
+    text-align: center;
+    font-weight: bolder;
+    color: white;
+    font-size: 5vw;
+    background-image: url(../Media/bg4.jpeg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 0px -200px;
+    background-attachment: scroll;
+}
+
+.auth {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 5vw;
+    margin-left: 20vw;
+    margin-right: 20vw;
+}
+
+.auth .Title {
+    font-family: 'Cinzel', serif;
+    font-weight: bolder;
+    font-size: 2.5vw;
+    margin-bottom: 1vw;
+}
+
+.auth .Summary {
+    line-height: 1.8vw;
+}
+
+.auth .authimg img {
+    width: 20vw;
+    height: 20vw;
+    box-shadow: 0px 0px 40px 1px black;
+}
+
+
+
+
+/************ Genre Page ****************/
+
+.gname {
+    padding-top: 2vw;
+    padding-bottom: 2vw;
+    margin-bottom: 5vw;
+    margin-left: 5vw;
+    margin-right: 5vw;
+    text-align: center;
+    font-weight: bolder;
+    color: white;
+    text-shadow: -2px -2px 0 #000, 2px -2px 0 #000, -2px 2px 0 #000, 2px 2px 0 #000;
+    font-size: 5vw;
+    background-image: url(../Media/bg4.jpeg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 0px -200px;
+    background-attachment: scroll;
+}
+
+.genre {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 5vw;
+    margin-left: 5vw;
+    margin-right: 5vw;
+}
+
+.genre .Title {
+    font-family: 'Cinzel', serif;
+    font-weight: bolder;
+    font-size: 2.5vw;
+    margin-bottom: 1vw;
+}
+
+.genre .Summary {
+    line-height: 1.8vw;
+    margin-right: 5vw;
+}
+
+.genre .genrevid video {
+    width: 600px;
+    height: 300px;
+}
+
+.gline {
+    margin-bottom: 5vw;
+    margin-left: 5vw;
+    margin-right: 5vw;
+    border: teal 2px solid;
+    background-color: teal;
+}
+
+
+.copyright {
+    background: black;
+    color: white;
+    text-align: center;
+    height: 2vw;
+    position: sticky;
+    bottom: 0;
+}
+
+.res {
+    margin-left: 3vw;
+}
+
+
+/************ MEDIA QUERY ****************/
+
+@media only screen and (max-width: 1024px) {
+    .mobnav {
+        display: block;
+    }
+
+    nav {
+        justify-content: center;
+    }
+
+    nav .Cname img {
+        width: 45vw;
+    }
+
+    nav .Links {
+        display: none;
+    }
+
+    nav .BookCategory {
+        display: none;
+    }
+
+    nav .Shop a {
+        margin-left: 3vw;
+    }
+    
+    nav .Shop img {
+        width: 3vw;
+    }
+      
+    .cart #clicks {
+        top: -5px;
+        right: 5px;
+        font-size: 2vw;
+    }
+
+
+    /************ Footer ****************/
+
+    footer {
+        background-color: gray;
+        color: black;
+        padding-top: 4vw;
+        padding-bottom: 3vw;
+        display: flex;
+        justify-content: space-between;
+        padding-left: 5vw;
+        padding-right: 5vw;
+    }
+
+    footer .logo h2 {
+        font-size: 3vw;
+    }
+
+    footer h3 {
+        font-size: 3vw;
+    }
+
+    footer .contact {
+        margin-left: 3vw;
+        margin-right: 3vw;
+    }
+
+    footer .contact p {
+        line-height: 4vw;
+    }
+
+    footer .letter .news {
+        background-color: white;
+        color: white;
+        padding-left: 1vw;
+        padding-right: 5vw;
+        padding-top: 0vw;
+        padding-bottom: 2vw;
+    }
+
+    footer .letter .news img {
+        width: 3vw;
+    }
+
+
+    /************ Home Page ****************/
+
+    .intro_books .left {
+        text-align: center;
+        margin-left: 5vw;
+        margin-right: 6vw;
+    }
+
+    .intro_books .left .tag {
+        color: gray;
+        font-size: 2vw;
+    }
+
+    .intro_books .right .two{
+        margin-right: 5vw;
+    }
+
+    .intro h1 {
+        font-size: 4vw;
+    }
+
+    .intro p {
+        font-size: 2vw;
+        line-height: 3vw;
+    }
+
+    .intro2 .head {
+        font-size: 4vw;
+    }
+
+    .intro2 .body {
+        font-size: 2vw;
+        padding-bottom: 4vw;
+        line-height: 3vw;
+    }
+
+
+
+
+    /************ Popular Picks Page ****************/
+
+    .pname {
+        margin-right: 10vw;
+        margin-left: 10vw;
+    }
+
+    .books {
+        margin-left: 10vw;
+        margin-right: 10vw;
+    }
+
+    .books .Title {
+        font-size: 3vw;
+        margin-bottom: 1vw;
+    }
+
+    .books .Author {
+        margin-bottom: 2vw;
+    }
+
+    .books .Summary {
+        line-height: 3vw;
+        font-size: 2.5vw;
+    }
+
+    .books .bookimg img {
+        width: 30vw;
+        height: 50vw;
+    }
+
+    .line {
+        margin-right: 10vw;
+        margin-left: 10vw;
+    }
+
+    button {
+        font-size: 2vw;
+    }
+
+
+    
+    /************ Genre Page ****************/
+
+    .genre {
+        margin-left: 2vw;
+        margin-right: 2vw;
+    }
+
+    .genre .genrevid video {
+        width: 300px;
+        height: 150px;
+    }
+
+    .genre .Title {
+        font-size: 4vw;
+        margin-bottom: 2vw;
+    }
+
+    .genre .Summary {
+        line-height: 3vw;
+        margin-right: 2vw;
+        font-size: 2vw;
+    }
+
+
+
+    /************ Author Page ****************/
+
+    .aname {
+        margin-left: 10vw;
+        margin-right: 10vw;
+        text-align: center;
+        font-weight: bolder;
+        color: white;
+        font-size: 5vw;
+        background-image: url(../Media/bg2.jpg);
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: 0px -200px;
+        background-attachment: scroll;
+    }
+
+    .auth {
+        margin-left: 10vw;
+        margin-right: 10vw;
+    }
+
+    .auth .Title {
+        font-size: 4vw;
+        margin-bottom: 2vw;
+    }
+
+    .auth .Summary {
+        line-height: 3vw;
+    }
+
+    .auth .authimg img {
+        width: 35vw;
+        height: 35vw;
+        margin-left: 6vw;
+    }
+
+  }
